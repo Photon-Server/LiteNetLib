@@ -1,7 +1,4 @@
-﻿#if UNITY_2018_3_OR_NEWER
-#define UNITY_SOCKET_FIX
-#endif
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
     using System;
     using System.Collections;
@@ -363,7 +360,7 @@ namespace LiteNetLib
         /// </summary>
         /// <param name="listener">Network events listener (also can implement IDeliveryEventListener)</param>
         /// <param name="extraPacketLayer">Extra processing of packages, like CRC checksum or encryption. All connected NetManagers must have same layer.</param>
-#if UNITY_SOCKET_FIX
+#if UNITY_2018_3_OR_NEWER
         public NetManager(INetEventListener listener, PacketLayerBase extraPacketLayer = null, bool useSocketFix = true)
         {
             _useSocketFix = useSocketFix;
@@ -1609,15 +1606,15 @@ namespace LiteNetLib
 
             //Stop
             CloseSocket();
-            
-#if UNITY_SOCKET_FIX
+
+#if UNITY_2018_3_OR_NEWER
             if (_useSocketFix)
             {
                 _pausedSocketFix.Deinitialize();
                 _pausedSocketFix = null;
             }
 #endif
-            
+
             _updateTriggerEvent.Set();
             if (!_manualMode)
             {

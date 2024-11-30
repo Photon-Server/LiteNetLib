@@ -1,7 +1,4 @@
-﻿#if DEBUG
-#define STATS_ENABLED
-#endif
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
     using System;
     using System.Collections.Concurrent;
@@ -1190,7 +1187,7 @@ namespace LiteNetLib
                         ushort size = BitConverter.ToUInt16(packet.RawData, pos);
                         if (size == 0)
                             break;
-                        
+
                         pos += 2;
                         if (packet.RawData.Length - pos < size)
                             break;

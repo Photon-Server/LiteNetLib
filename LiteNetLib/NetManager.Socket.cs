@@ -1,7 +1,4 @@
-﻿#if UNITY_2018_3_OR_NEWER
-#define UNITY_SOCKET_FIX
-#endif
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
     using System;
     using System.Collections.Generic;
@@ -20,7 +17,7 @@ namespace LiteNetLib
         private Thread _receiveThread;
         private IPEndPoint _bufferEndPointv4;
         private IPEndPoint _bufferEndPointv6;
-#if UNITY_SOCKET_FIX
+#if UNITY_2018_3_OR_NEWER
         private PausedSocketFix _pausedSocketFix;
         private bool _useSocketFix;
 #endif
@@ -347,7 +344,7 @@ namespace LiteNetLib
 
             LocalPort = ((IPEndPoint)_udpSocketv4.LocalEndPoint).Port;
 
-#if UNITY_SOCKET_FIX
+#if UNITY_2018_3_OR_NEWER
             if (_useSocketFix && _pausedSocketFix == null)
                 _pausedSocketFix = new PausedSocketFix(this, addressIPv4, addressIPv6, port, manualMode);
 #endif
@@ -456,7 +453,7 @@ namespace LiteNetLib
                 {
                     try
                     {
-#if !UNITY_SOCKET_FIX
+#if !UNITY_2018_3_OR_NEWER
                         socket.SetSocketOption(
                             SocketOptionLevel.IPv6,
                             SocketOptionName.AddMembership,
