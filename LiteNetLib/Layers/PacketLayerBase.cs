@@ -1,7 +1,7 @@
-﻿using System.Net;
-
-namespace LiteNetLib.Layers
+﻿namespace LiteNetLib.Layers
 {
+    using System.Net;
+
     public abstract class PacketLayerBase
     {
         public readonly int ExtraPacketSizeForLayer;

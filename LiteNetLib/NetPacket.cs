@@ -1,8 +1,8 @@
-﻿using System;
-using LiteNetLib.Utils;
-
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
+    using System;
+    using Utils;
+
     internal enum PacketProperty : byte
     {
         Unreliable,

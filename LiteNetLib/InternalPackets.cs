@@ -1,10 +1,10 @@
-using System;
-using System.Net;
-using LiteNetLib.Utils;
-
 namespace LiteNetLib
 {
-   internal sealed class NetConnectRequestPacket
+    using System;
+    using System.Net;
+    using Utils;
+
+    internal sealed class NetConnectRequestPacket
     {
         public const int HeaderSize = 18;
         public readonly long ConnectionTime;

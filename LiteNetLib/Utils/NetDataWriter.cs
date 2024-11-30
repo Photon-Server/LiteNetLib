@@ -1,11 +1,11 @@
-﻿using System;
-using System.Net;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading;
-
-namespace LiteNetLib.Utils
+﻿namespace LiteNetLib.Utils
 {
+    using System;
+    using System.Net;
+    using System.Runtime.CompilerServices;
+    using System.Text;
+    using System.Threading;
+
     public class NetDataWriter
     {
         protected byte[] _data;

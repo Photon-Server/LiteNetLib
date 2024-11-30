@@ -1,7 +1,7 @@
-using System;
-
 namespace LiteNetLib
 {
+    using System;
+
     internal sealed class SequencedChannel : BaseChannel
     {
         private int _localSequence;

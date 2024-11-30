@@ -1,9 +1,9 @@
-﻿using System;
-using System.Net;
-using System.Runtime.CompilerServices;
-
-namespace LiteNetLib.Utils
+﻿namespace LiteNetLib.Utils
 {
+    using System;
+    using System.Net;
+    using System.Runtime.CompilerServices;
+
     public class NetDataReader
     {
         protected byte[] _data;

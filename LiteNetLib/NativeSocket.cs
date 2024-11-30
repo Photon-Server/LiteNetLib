@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Net.Sockets;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Net;
+    using System.Net.Sockets;
+    using System.Runtime.CompilerServices;
+    using System.Runtime.InteropServices;
+
     internal static class NativeSocket
     {
         static unsafe class WinSock

@@ -1,9 +1,9 @@
-﻿using System.Net;
-using System.Threading;
-using LiteNetLib.Utils;
-
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
+    using System.Net;
+    using System.Threading;
+    using Utils;
+
     internal enum ConnectionRequestResult
     {
         None,

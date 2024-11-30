@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-
-namespace LiteNetLib.Utils
+﻿namespace LiteNetLib.Utils
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Diagnostics.CodeAnalysis;
+
     public class NetPacketProcessor
     {
         private static class HashCache<T>

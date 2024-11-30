@@ -1,12 +1,12 @@
-﻿using System;
-using System.Reflection;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Net;
-using System.Runtime.Serialization;
-
-namespace LiteNetLib.Utils
+﻿namespace LiteNetLib.Utils
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Diagnostics.CodeAnalysis;
+    using System.Net;
+    using System.Reflection;
+    using System.Runtime.Serialization;
+
     public class InvalidTypeException : ArgumentException
     {
         public InvalidTypeException(string message) : base(message) { }

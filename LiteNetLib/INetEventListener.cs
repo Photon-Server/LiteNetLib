@@ -1,9 +1,9 @@
-﻿using System.Net;
-using System.Net.Sockets;
-using LiteNetLib.Utils;
-
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
+    using System.Net;
+    using System.Net.Sockets;
+    using Utils;
+
     /// <summary>
     /// Type of message that you receive in OnNetworkReceiveUnconnected event
     /// </summary>

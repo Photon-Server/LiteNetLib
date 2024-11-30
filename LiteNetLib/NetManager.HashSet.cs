@@ -1,9 +1,9 @@
-﻿using System;
-using System.Net;
-using System.Threading;
-
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
+    using System;
+    using System.Net;
+    using System.Threading;
+
     //minimal hashset class from dotnet with some optimizations
     public partial class NetManager
     {

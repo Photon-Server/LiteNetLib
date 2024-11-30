@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
+    using System;
+
     internal sealed class ReliableChannel : BaseChannel
     {
         private struct PendingPacket

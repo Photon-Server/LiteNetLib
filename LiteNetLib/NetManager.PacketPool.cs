@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
+    using System;
+
     public partial class NetManager
     {
         private NetPacket _poolHead;

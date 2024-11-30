@@ -1,9 +1,9 @@
-﻿using LiteNetLib.Utils;
-using System;
-using System.Net;
-
-namespace LiteNetLib.Layers
+﻿namespace LiteNetLib.Layers
 {
+    using System;
+    using System.Net;
+    using Utils;
+
     public sealed class Crc32cLayer : PacketLayerBase
     {
         public Crc32cLayer() : base(CRC32C.ChecksumSize)

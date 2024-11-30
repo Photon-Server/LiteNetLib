@@ -1,7 +1,7 @@
-﻿using System.Threading;
-
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
+    using System.Threading;
+
     public sealed class NetStatistics
     {
         private long _packetsSent;

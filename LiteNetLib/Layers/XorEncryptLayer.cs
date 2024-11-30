@@ -1,9 +1,9 @@
-﻿using System;
-using System.Net;
-using System.Text;
-
-namespace LiteNetLib.Layers
+﻿namespace LiteNetLib.Layers
 {
+    using System;
+    using System.Net;
+    using System.Text;
+
     public class XorEncryptLayer : PacketLayerBase
     {
         private byte[] _byteKey;

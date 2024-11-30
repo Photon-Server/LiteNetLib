@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace LiteNetLib.Utils
+﻿namespace LiteNetLib.Utils
 {
+    using System;
+
     /// <summary>
     /// Represents RFC4330 SNTP packet used for communication to and from a network time server.
     /// </summary>

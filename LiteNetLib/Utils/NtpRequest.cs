@@ -1,8 +1,8 @@
-﻿using System.Net;
-using System.Net.Sockets;
-
-namespace LiteNetLib.Utils
+﻿namespace LiteNetLib.Utils
 {
+    using System.Net;
+    using System.Net.Sockets;
+
     internal sealed class NtpRequest
     {
         private const int ResendTimer = 1000;

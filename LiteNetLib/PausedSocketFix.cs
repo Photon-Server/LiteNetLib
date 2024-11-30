@@ -1,9 +1,9 @@
 ﻿#if UNITY_2018_3_OR_NEWER
-using System.Net;
-using UnityEngine;
-
 namespace LiteNetLib
 {
+    using System.Net;
+    using UnityEngine;
+
     public class PausedSocketFix
     {
         private readonly NetManager _netManager;

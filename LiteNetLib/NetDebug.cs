@@ -1,8 +1,8 @@
-﻿using System;
-using System.Diagnostics;
-
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
+    using System;
+    using System.Diagnostics;
+
     public class InvalidPacketException : ArgumentException
     {
         public InvalidPacketException(string message) : base(message)

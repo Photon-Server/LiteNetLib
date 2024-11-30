@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Net;
-using System.Net.Sockets;
-using System.Net.NetworkInformation;
-
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Diagnostics.CodeAnalysis;
+    using System.Net;
+    using System.Net.NetworkInformation;
+    using System.Net.Sockets;
+
     /// <summary>
     /// Address type that you want to receive from NetUtils.GetLocalIp method
     /// </summary>

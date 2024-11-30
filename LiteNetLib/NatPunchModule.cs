@@ -1,11 +1,11 @@
-﻿using System.Collections.Concurrent;
-using System.Diagnostics.CodeAnalysis;
-using System.Net;
-using System.Net.Sockets;
-using LiteNetLib.Utils;
-
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
+    using System.Collections.Concurrent;
+    using System.Diagnostics.CodeAnalysis;
+    using System.Net;
+    using System.Net.Sockets;
+    using Utils;
+
     public enum NatAddressType
     {
         Internal,

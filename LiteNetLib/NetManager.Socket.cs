@@ -1,16 +1,16 @@
 ﻿#if UNITY_2018_3_OR_NEWER
 #define UNITY_SOCKET_FIX
 #endif
-using System.Runtime.InteropServices;
-using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading;
-using LiteNetLib.Utils;
-
 namespace LiteNetLib
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Net;
+    using System.Net.Sockets;
+    using System.Runtime.InteropServices;
+    using System.Threading;
+    using Utils;
+
     public partial class NetManager
     {
         private const int ReceivePollingTime = 500000; //0.5 second

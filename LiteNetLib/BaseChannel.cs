@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Threading;
-
-namespace LiteNetLib
+﻿namespace LiteNetLib
 {
+    using System.Collections.Generic;
+    using System.Threading;
+
     internal abstract class BaseChannel
     {
         protected readonly NetPeer Peer;
