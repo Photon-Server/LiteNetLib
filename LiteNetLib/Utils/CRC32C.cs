@@ -1,14 +1,14 @@
-﻿#if NETCOREAPP3_0_OR_GREATER || NETCOREAPP3_1 || NET5_0
-using System;
-using System.Runtime.InteropServices;
-using System.Runtime.Intrinsics.X86;
+﻿namespace LiteNetLib.Utils
+{
+#if NETCOREAPP3_0_OR_GREATER || NETCOREAPP3_1 || NET5_0
+    using System;
+    using System.Runtime.InteropServices;
+    using System.Runtime.Intrinsics.X86;
 #endif
 #if NET5_0_OR_GREATER || NET5_0
-using System.Runtime.Intrinsics.Arm;
+    using System.Runtime.Intrinsics.Arm;
 #endif
 
-namespace LiteNetLib.Utils
-{
     //Implementation from Crc32.NET
     public static class CRC32C
     {
