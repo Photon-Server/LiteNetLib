@@ -360,13 +360,12 @@
         /// </summary>
         /// <param name="listener">Network events listener (also can implement IDeliveryEventListener)</param>
         /// <param name="extraPacketLayer">Extra processing of packages, like CRC checksum or encryption. All connected NetManagers must have same layer.</param>
-#if UNITY_2018_3_OR_NEWER
+#pragma warning disable CS1573 // Parameter has no matching param tag in the XML comment (but other parameters do)
         public NetManager(INetEventListener listener, PacketLayerBase extraPacketLayer = null, bool useSocketFix = true)
+#pragma warning restore CS1573 // Parameter has no matching param tag in the XML comment (but other parameters do)
         {
+#if UNITY_2018_3_OR_NEWER
             _useSocketFix = useSocketFix;
-#else
-        public NetManager(INetEventListener listener, PacketLayerBase extraPacketLayer = null)
-        {
 #endif
             _netEventListener = listener;
             _deliveryEventListener = listener as IDeliveryEventListener;
