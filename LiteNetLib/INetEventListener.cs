@@ -2,7 +2,7 @@
 {
     using System.Net;
     using System.Net.Sockets;
-    using Utils;
+    using LiteNetLib.Utils;
 
     /// <summary>
     /// Type of message that you receive in OnNetworkReceiveUnconnected event

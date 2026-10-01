@@ -4,7 +4,7 @@
     using System.Diagnostics.CodeAnalysis;
     using System.Net;
     using System.Net.Sockets;
-    using Utils;
+    using LiteNetLib.Utils;
 
     public enum NatAddressType
     {

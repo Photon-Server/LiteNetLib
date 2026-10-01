@@ -2,7 +2,7 @@
 {
     using System;
     using System.Net;
-    using Utils;
+    using LiteNetLib.Utils;
 
     public sealed class Crc32cLayer : PacketLayerBase
     {

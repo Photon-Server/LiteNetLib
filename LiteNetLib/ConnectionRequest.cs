@@ -2,7 +2,7 @@
 {
     using System.Net;
     using System.Threading;
-    using Utils;
+    using LiteNetLib.Utils;
 
     internal enum ConnectionRequestResult
     {

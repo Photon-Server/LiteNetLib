@@ -7,7 +7,7 @@
     using System.Net;
     using System.Runtime.CompilerServices;
     using System.Threading;
-    using Utils;
+    using LiteNetLib.Utils;
 
     /// <summary>
     /// Peer connection state

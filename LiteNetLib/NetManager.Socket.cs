@@ -6,7 +6,7 @@
     using System.Net.Sockets;
     using System.Runtime.InteropServices;
     using System.Threading;
-    using Utils;
+    using LiteNetLib.Utils;
 
     public partial class NetManager
     {

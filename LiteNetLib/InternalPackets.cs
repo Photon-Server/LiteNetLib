@@ -2,7 +2,7 @@ namespace LiteNetLib
 {
     using System;
     using System.Net;
-    using Utils;
+    using LiteNetLib.Utils;
 
     internal sealed class NetConnectRequestPacket
     {

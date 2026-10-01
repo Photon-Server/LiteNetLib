@@ -8,8 +8,8 @@
     using System.Net;
     using System.Net.Sockets;
     using System.Threading;
-    using Layers;
-    using Utils;
+    using LiteNetLib.Layers;
+    using LiteNetLib.Utils;
 
     public sealed class NetPacketReader : NetDataReader
     {
